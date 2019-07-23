@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+		<h1>Wasteless</h1>
+		<h3 class="subtitle"> Spend better and get more</h3>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="animated fadeIn common-bg">
+
+  <ion-card no-margin margin-bottom class="full-width">
+    <ion-item tappable class="border-bottom">
+		<ion-input placeholder="Enter your location zipcode" [(ngModel)]="selectedType.zipCode"></ion-input>
+      <ion-icon name="search" color="primary" item-left></ion-icon>
+    </ion-item>
+    <ion-item>
+        <ion-label class="text-1x bold">Select Items</ion-label>
+        <ion-select [(ngModel)]="selectedType.item" (ionChange)="getWeather(item)">
+          <ion-option *ngFor="let item of itemList" [value]="item">{{ item }}</ion-option>
+        </ion-select>
+      </ion-item>
+  </ion-card>
+
+  <button ion-button icon-start block no-margin color="primary" class="round" tappable (click)="doSearch()">
+    <ion-icon name="search"></ion-icon> Search
+  </button>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title item-left>
+		<p class="footerContent">Contact US <br> Wasteless, 1 Pace Plaza 10038 </p>
+	 </ion-title>
+	 
+  </ion-toolbar>
+</ion-footer>

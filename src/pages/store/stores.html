@@ -1,0 +1,46 @@
+<!-- -->
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <span ion-text>Promotions near you</span>
+    </ion-title>
+  </ion-navbar>
+
+  <!--  -->
+  <ion-toolbar padding color="light" *ngIf="stores && stores.length <= 0">
+    <p ion-text no-margin class="no-results">
+      <strong>No results found.</strong>
+    </p>
+  </ion-toolbar>
+	
+  <ion-toolbar padding color="light" *ngIf="stores && stores.length > 0">
+    <p ion-text no-margin class="text-white">
+      <strong>{{stores.length}}</strong> results found!
+    </p>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="common-bg">
+	<!--list of stores-->
+	<ion-grid>
+		<ion-row *ngFor="let store of stores">
+		 	<ion-col>
+				<img class="feed_post_photo_img" [src]="store.thumb" alt="">
+			</ion-col>
+			<ion-col text-wrap>
+				<div class="text-headre">
+					<span class="store-name" (click)="viewDetail(store.id)" ion-text color="primary">{{ store.name }}</span>
+				</div>
+				<div>
+					<span ion-text color="darkblack">{{ store.location }}</span>
+				</div>
+				<div>
+					<span ion-text color="darkblack">{{ store.zipcode }}</span>
+				</div>
+			</ion-col>
+    	</ion-row>
+    	
+  </ion-grid>
+	
+</ion-content>

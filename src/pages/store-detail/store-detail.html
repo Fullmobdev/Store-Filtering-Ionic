@@ -1,0 +1,43 @@
+<!-- -->
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <span ion-text>Grab it before it goes to waste !!</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="common-bg">
+	
+ 	<!--services-->
+  	<ion-grid>
+		<ion-item *ngFor="let product of products">
+		<ion-row>
+			<ion-col text-left>
+				<div>
+					<span ion-text color="darkblack"><strong>{{product.item}}</strong></span>
+				</div>
+			</ion-col>
+		</ion-row>
+		<ion-row >
+		 	<ion-col>
+				<img class="feed_post_photo_img" [src]="product.thumb" alt="">
+			</ion-col>
+			<ion-col text-wrap>
+				<div>
+					<span ion-text color="darkblack">{{ product.price }}</span>
+				</div>
+				<div>
+					<ion-icon name="time" class="text-green"></ion-icon>
+					<span ion-text color="darkblack">{{ product.ends }}</span>
+				</div>
+				<div *ngFor="let discount of product.discounts">
+					<span ion-text color="darkblack">{{ discount }}</span>
+				</div>
+			</ion-col>
+    	</ion-row>
+		</ion-item>
+    	
+  </ion-grid>
+
+</ion-content>

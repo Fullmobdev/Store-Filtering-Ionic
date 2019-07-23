@@ -1,0 +1,41 @@
+First page:
+
+HEADER: 
+shaded red-coral background
+name of the APP: <h1>Wasteless</h1> (big italic font in white)
+<h2> Spend better and get more</h2>
+
+BODY:
+
+picture provided shaded for background.
+Two buttons
+
+First button:
+button to type zip code
+<p> enter your location </p>
+
+second button
+
+button  to drop down list of item
+
+meat
+dairy
+fruits and vegetables
+beverages
+snacks
+
+<p> What do you need ? </p>
+
+
+Users can pick either location or product they want or both
+
+
+
+FOOTER
+
+Contact US
+
+<p> Wasteless, 1 Pace Plaza 10038 </p>
+
+
+

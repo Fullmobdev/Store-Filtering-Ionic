@@ -1,0 +1,19 @@
+2nd page showing either by looking at zip code or selected product or combination of both.
+
+HEADER: shaded background
+
+<p> Promotions near you </p>
+
+
+List of stores: (I will send you the data for this).
+
+- picture of the logo. 
+- name of the store (with click)
+- address
+- zip code
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+page-stores,
+.stores {
+	.card {
+		border-radius: 1rem
+	}
+  .store {
+    overflow: hidden;
+
+    .background {
+      background-size: 100% auto;
+      background-position: center;
+
+      .background-filter {
+        height: 16rem;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65));
+
+        .align-bottom {
+          width: 100%;
+        }
+      }
+    }
+  }
+	
+  .toolbar-background {
+	background-color: #ff4040;
+  }
+	
+  .toolbar-title  {
+	color: white;
+  }
+	
+	.no-results{
+	  color: white;
+	  font-size: 16px;
+	  text-align: center;
+	}
+	
+	  .feed_post_photo_img {
+	  max-width: 200px;
+  }
+	
+  .col {
+	max-width: 50%;
+  }
+	
+	.store-name {
+		cursor: pointer;
+		
+	}
+	
+	.text-headre {
+		font-size: 16px;
+		padding-bottom: 10px;
+	}
+}
